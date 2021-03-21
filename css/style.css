@@ -1,0 +1,204 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    color: #533738;
+}
+
+.wraper{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min(715px) min(600px) min(273px) min(1200px) min(998px) min(800px) min(624px) min(100px)
+    
+}
+
+.grid-item {
+    border: 1px solid #000;
+}
+
+
+.header_grid {
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "header-logo header-nav" 
+                         ". header-text" 
+                         ". header-knopka";
+    column-gap: 5px;
+   
+
+}
+.header-logo {
+    grid-area: header-logo;
+    justify-self: right;
+    align-self: center;
+    text-decoration: none;
+    
+} 
+
+.header-nav {
+    grid-area: header-nav;
+    justify-self: center;
+    align-self: center;
+
+   
+}
+
+.header-text {
+    grid-area: header-text;
+    }
+
+.header-zagolovok {
+    font-size: 50px;
+    line-height: 62px;
+}
+
+.header-podzagolovok {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 10px 0px 0px 0px;
+    
+}
+
+.header-knopka {
+    grid-area: header-knopka;
+}
+
+.header-nav_ssilka{
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+    line-height: 20px;
+   }
+
+.knopka{
+   display: inline-block;
+   text-decoration: none; 
+   left: 0%;
+   right: 0%;
+   top: 0%;
+   bottom: 0%;
+   background: #CC8B86;
+   margin: 1px 0px 0px 0px;
+   font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+padding: 25px 67px;
+color: #533738;
+}
+
+.onas_grid {
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 9fr;
+    grid-template-areas: "onas onas" 
+                         "img_onas text_onas";
+    column-gap: 5px;
+ 
+}
+
+.onas {
+    grid-area: onas;
+    justify-self: center;
+    align-self: center;
+    font-size: 40px;
+   
+}
+
+.img_onas {
+    grid-area: img_onas;
+    justify-self: center;
+    align-self: center;
+    font-size: 40px;
+    background: url("img/shche_-team-PFi1uWHh2dQ-unsplash 1.jpg");
+      
+}
+
+.text_onas{
+    grid-area: text_onas;
+    font-size: 18px;
+    line-height: 30px;
+    justify-self: center;
+    align-self: center;
+
+  }
+
+
+  /* НАШИ ОПЫТ */
+.nash_opyt_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid #000;
+font-size: 50px;
+line-height: 62px;
+align-items: center;
+background-color: #8D7370;;
+}
+
+.Plet{
+    align-items: center;
+    color: #FFFFFF
+}
+.Drabot{
+    align-items: center;
+    color: red
+}
+.Dnagrad{
+    align-items: center;
+    color: #FFFFFF
+}
+
+.nashi_raboty{
+    display: grid;
+    border: 1px solid #000;
+
+    grid-template-areas: "nashi_raboty_text nashi_raboty_text"
+                         "Photo1 Photo2"
+                         "Photo3 Photo4";
+    column-gap: 10px;
+    row-gap: 5px;
+}
+/* НАШИ РАБОТЫ */
+.nashi_raboty_text{
+    grid-area: nashi_raboty_text;
+}
+.Photo1{
+    grid-area: Photo1;
+}
+.Photo2{
+    grid-area: Photo2;
+}
+.Photo3{
+    grid-area: Photo3;
+}
+.Photo4{
+    grid-area: Photo4;
+}
+
+
+
+
+
+/*
+.header {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 4fr 2fr 1fr;
+    grid-template-areas: 'header-logo header-nav'
+                         '. header-zagolovok'
+                         '. header-podzagolovok'
+                         '. header-knopka';
+column-gap: 10px;
+row-gap: 10px;
+}
+*/
+
+
